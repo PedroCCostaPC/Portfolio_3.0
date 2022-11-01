@@ -1,0 +1,43 @@
+<section id="detalhesCursos">
+
+    <?php foreach($cursos as $curso): ?>
+        <div id="<?= $curso['id'] ?>" class="dark anime-dark">
+            <div class="detalhe-<?= $curso['status'] ?> box anime-box anime-Scroll">
+                <button class="close anime-close"><i class="fa-solid fa-xmark"></i></button>
+
+                <div class="row-1 anime-conteudo">
+                    <img src="assets/img/cursos/<?= $curso['img'] ?>" alt="<?= $curso['nome'] ?>">
+        
+                    <a target="_blank" href="<?= $curso['link'] ?>">Visitar Curso</a>
+                </div>
+                
+                <div class="row-2 anime-conteudo">
+                    <h1><?= $curso['nomeCompleto'] ?></h1>
+        
+                    <div class="detalhe status">
+                        <h2>Status</h2>
+                        <p><?= $curso['status'] ?></p>
+                    </div>
+        
+                    <div class="detalhe">
+                        <h2>Duração do curso</h2>
+                        <p><?= $curso['duracao'] ?></p>
+                    </div>
+        
+                    <div class="detalhe">
+                        <h2>Resumo</h2>
+                        <p><?= $curso['resumo'] ?></p>
+                    </div>
+        
+                    <div class="detalhe">
+                        <h2>Descrição</h2>
+                        <?php require_once($curso['detalhes']); ?>
+                        
+                    </div>
+                </div> <!-- Fim Div .row-2 -->
+
+            </div> <!-- Fim Div #box -->
+        </div> <!-- Fim Div .dark -->
+    <?php endforeach; ?>
+
+</section>

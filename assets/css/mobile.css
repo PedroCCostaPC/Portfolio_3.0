@@ -1,0 +1,376 @@
+@media only screen and (max-width:  920px) {
+
+    
+    .titulo h1 {
+        width: 100%;
+    }
+
+    .titulo hr {
+        width: 200px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    /* --------------------- HEADER --------------------- */
+    header,
+    #paiHeader {
+        height: 70px;
+    }
+    
+
+    #botNav {  
+        display: block;
+        float: right;
+    }
+
+    #nav {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        height: 70px;
+        background: var(--cor_Primaria);
+    }
+
+    #botNav button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 40px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #botNav button hr {
+        position: absolute;
+        width: 40px;
+        margin-top: 10px;
+        border-top: solid 1.5px var(--color_Tres);
+        border-bottom: solid 1.5px var(--color_Tres);
+        border-radius: 10px;
+        background: var(--color_Tres);
+        transition: .3s;
+    }
+
+
+    #botNav button hr:first-child {
+        top: -10px;
+    }
+
+    #botNav button hr:nth-child(2) {
+        top: 4px;
+    }
+
+    #botNav button hr:last-child {
+        top: 17px;
+    }
+
+    /* NAV */
+    #paiHeader nav {
+        position: fixed;
+        background: rgba(0, 0, 0, .7);
+        width: 100%;
+        height: 100%;
+        right: 0;
+        transition: .3s;
+    }
+
+    #paiHeader nav div {
+        position: absolute;
+        width: 90%;
+        right: 0;
+        background: var(--color_Dois);
+        align-items: flex-start;
+        transition: .3s;
+        
+    }
+
+    #paiHeader nav div ul {
+        margin-top: 80px;
+        width: 80%;
+        text-align: center;
+    }
+
+    #paiHeader nav div a {
+        display: block;
+        font-size: 18px;
+        color: var(--color_Tres);
+        margin: 0;
+        padding: 30px 0;
+        border-bottom: solid 1px var(--cor_Primaria);
+        font-family: "Roboto-Light";
+    }
+
+    #paiHeader nav div a:hover, .pag {
+        color: var(--color_Tres) !important;
+    }
+
+    /* ANIME NAV */
+    .anime-nav-box {
+        right: -90% !important;
+    }
+
+    .anime-nav-dark {
+        right: -100% !important;
+    }
+
+    /* ANIME BOT NAV */
+    .anime-nav-bot hr:first-child {
+        transform: rotate(45deg);
+        top: 5px !important;
+    }
+
+    .anime-hr,
+    .anime-nav-bot hr:last-child {
+        transform: rotate(-45deg);
+        top: 6px !important;
+    }
+
+    .anime-hr {
+        border: solid 7px var(--cor_Primaria) !important; 
+        background: var(--cor_Primaria) !important;
+        top: -5px !important;
+    }
+
+
+    /* --------------------- SLIDE --------------------- */
+    #slide {
+        height: 300px;
+    }
+
+    #sobre {
+        width: 90%;
+        left: 5%;
+        bottom: -435px;
+        padding: 30px 15px;
+        background: rgba(0, 0, 0, .7);
+    }
+
+    /* Profissao e git */
+    #profissao {
+        width: 90%;
+        float: none;
+        background: var(--cor_Primaria);
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    #profissao h1 {
+        float: none;
+        font-size: 18px;
+        padding: 0;
+        padding-bottom: 20px;
+        color: var(--color_Tres);
+    }
+    
+    #profissao a {
+        float: none;
+        padding: 0;
+        color: var(--color_Dois);
+    }
+    
+    #profissao a:hover {
+        color: var(--color_Dois);
+    }
+
+    /* Contato */
+    #contatos {
+        float: none;
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #contatos .contato {
+        display: block;
+        height: 120px;
+        padding: 20px 20px 0 20px;
+        box-sizing: border-box;
+    }
+
+    #contatos .contato .col1,
+    #contatos .contato .col2 {
+        width: 100%;
+    }
+
+    #contatos .contato .col1 {
+        padding-bottom: 10px;
+    }
+
+    #contatos .contato .col2 p {
+        font-size: 14px;
+    }
+
+    /* --------------------- SLIDE --------------------- */
+    #skills {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 400px;
+    }
+
+    #skills .row .col .col2 h2 {
+        font-size: 25px;
+    }
+
+    #skills .row .col {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #skills .row .col .col1 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #skills .row .col .col1 img {
+        max-width: 150px;
+        max-height: 100px;
+    }
+
+    #skills .row .col .col2 {
+        width: 100%;
+    }
+
+    /* --------------------- CURSOS --------------------- */
+    #cursos {
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 0;
+    }
+
+    #cursos .titulo {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #sitacao .sit {
+        margin-top: 20px;
+    }
+
+    #cursos .carousel {
+        margin-top: 40px;
+    }
+
+    .slick-prev {
+        left: -15px;
+    }
+
+    .slick-next {
+        right: -15px;
+    }
+
+    #cursos .carousel .curso .curso-descricao p {
+        text-align: center;
+    }
+
+    #cursos .carousel .curso .curso-descricao .button {
+        margin-top: 30px;
+    }
+
+
+    /* --------------------- DETALHES DOS CURSOS --------------------- */
+    .box {
+        width: 80%;
+    }
+
+    .box::-webkit-scrollbar {
+        width: 10px;
+    }
+
+
+    /* --------------------- PROJETOS --------------------- */
+    #projetos {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #projetos .titulo {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #projetos .row .col {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #projetos .row .col p {
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+
+
+    /* --------------------- TRAMPOS --------------------- */
+    #trampos {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #trampos .row .col:first-child {
+        margin-top: 0;
+    } 
+
+    #trampos .row .col {
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+    } 
+
+    #trampos .row .col img {
+        max-width: 200px;
+    }
+
+    #trampos .row .col p {
+        width: auto;
+    }
+
+
+
+    /* --------------------- FOOTER --------------------- */
+    #footer {
+        padding: 20px 40px;
+        margin-top: 70px;
+    }
+
+    #footerBox {
+        display: block;
+    }
+
+    #footerBox .col-1,
+    #footerBox .col-2 {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #footerBox .col-2 {
+        padding: 80px 40px 20px 40px;
+        box-sizing: border-box;
+    }
+
+    #footerBox .col-1 {
+        border: none;
+    }
+
+    #footerBox .col-1 .row {
+        width: 100%;
+    }
+
+    #footerBox a:hover {
+        text-decoration: none;
+    }
+
+
+    #footerBox .col-2 i {
+        display: none;
+    }
+
+
+    
+
+}

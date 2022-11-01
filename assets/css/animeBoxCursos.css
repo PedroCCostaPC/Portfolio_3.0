@@ -1,0 +1,29 @@
+.anime-dark {
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+}
+
+.anime-box {
+    width: 0;
+}
+
+.anime-close {
+    border-radius: 100%;
+    opacity: 0;
+    padding: 0 !important;
+    transform: rotate(-360deg);
+}
+
+.anime-conteudo {
+    opacity: 0;
+}
+
+.anime-Scroll::-webkit-scrollbar-thumb {
+    opacity: 0;
+}
+
+.anime-Scroll::-webkit-scrollbar {
+    display: none;
+}

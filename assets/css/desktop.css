@@ -1,0 +1,877 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor_Primaria: #1a1a1a;
+    --color_Um: #535353;
+    --color_Dois: #004484;
+    --color_Tres: #fff;
+    --cor_Concluido: #0b3e01;
+    --cor_Fila: #600c7b;
+    --cor_Incompleto: #7b0c0c;
+}
+
+body {
+    background: var(--cor_Primaria);
+    font-family: "Roboto-Regular";
+}
+
+.container {
+    position: relative !important;
+    width: 100%;
+    max-width: 1900px;
+}
+
+/* --------------------- SCROLL DA PAGINA --------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+    background: var(--color_Um);
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--cor_Primaria);
+    border: solid 2px var(--color_Um);
+  }
+
+
+/* --------------------- HEADER --------------------- */
+header {
+    height: 100px;
+}
+
+#paiHeader {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    max-width: 1900px;
+    z-index: 2;
+    background: var(--cor_Primaria);
+}
+
+#nav {
+    float: left;
+    height: 100%;
+}
+
+#logo {
+    float: left;
+    padding-left: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Roboto-Bold";
+    color: var(--color_Um);
+}
+
+#logo a span {
+    color: var(--color_Dois);
+}
+
+#botNav {
+    display: none;
+}
+
+#paiHeader nav {
+    float: right;
+    height: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+#paiHeader nav div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#paiHeader nav div ul li {
+    list-style: none;
+    display: inline;
+}
+
+#paiHeader nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color_Um);
+    margin: 0 30px;
+    transition: .2s;
+}
+
+#paiHeader nav a:hover {
+    color: var(--color_Dois);
+}
+
+.pag {
+    color: var(--color_Dois) !important;
+}
+
+
+
+/* --------------------- SLIDE --------------------- */
+#slide {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+}
+
+#sobre {
+    position: absolute;
+    width: 430px;
+    background: #000;
+    left: 70px;
+    bottom: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#profissao {
+    width: 100%;
+    float: left;
+}
+
+#profissao h1 {
+    float: left;
+    font-size: 22px;
+    color: var(--color_Um);
+    background: var(--cor_Primaria);
+    padding: 15px 50px;
+    font-family: "Roboto-Light";
+}
+
+#profissao a {
+    text-decoration: none;
+    float: right;
+    color: var(--color_Um);
+    background: var(--cor_Primaria);
+    font-size: 30px;
+    padding: 11px 13px;
+    transition: .5s;
+}
+
+#profissao a:hover {
+    color: var(--color_Tres);
+}
+
+
+#contatos {
+    float: left;
+    width: 100%;
+    background: var(--cor_Primaria);
+    margin-top: 50px;
+    padding: 0 20px 50px 20px;
+    box-sizing: border-box;
+}
+
+#contatos .contato {
+    width: 100%;
+    border-bottom: solid 2px var(--color_Um);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#contatos .contato .col1 {
+    float: left;
+    width: 40px;
+}
+
+#contatos .contato i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: var(--color_Dois);
+}
+
+#contatos .contato .col2 {
+    float: left;
+    width: 230px;
+}
+
+#contatos .contato .col2 p {
+    font-size: 18px;
+    color: var(--color_Um);
+}
+
+#contatos .contato .col2 p:nth-child(2) {
+    margin-top: 10px;
+    color: var(--color_Tres);
+}
+
+
+
+/* --------------------- SKILLS --------------------- */
+#skills {
+    width: 90%;
+    margin-left: 5%;
+    max-width: 1750px;
+    padding-top: 130px;
+    float: left;
+}
+
+.titulo {
+    float: left;
+    width: 100%;
+    height: 120px;
+}
+
+.titulo h1 {
+    float: left;
+    color: var(--color_Um);
+    font-size: 40px;
+}
+
+.titulo hr {
+    float: left;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 25px;
+    height: 3px;
+    background: var(--color_Dois);
+    border-color: var(--color_Dois);
+}
+
+
+#skills .row {
+    float: left;
+    width: 100%;
+}
+
+#skills .row .col {
+    float: left;
+    width: 40%;
+    height: 170px;
+    border: solid 2px var(--color_Um);
+    margin: 0 4.5%;
+    margin-bottom: 100px;
+}
+
+#skills .row .col .col1 {
+    float: left;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#skills .row .col .col1 img {
+    max-width: 60%;
+    max-height: 100px;
+}
+
+#skills .row .col .col2 {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#skills .row .col .col2 h2 {
+    font-size: 40px;
+    color: var(--color_Dois);
+}
+
+#skills .row .col .col2 p {
+    font-size: 16px;
+    font-family: "Roboto-Bold";
+    color: var(--color_Um);
+    margin-top: 20px;
+}
+
+
+/* --------------------- CURSOS --------------------- */
+#cursos {
+    width: 90%;
+    margin-left: 5%;
+    max-width: 1750px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    float: left;
+}
+
+#sitacao {
+    float: left;
+    width: 100%;
+}
+
+#sitacao .sit {
+    float: left;
+    font-weight: 16px;
+    margin-right: 35px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#sitacao .concluido {
+    color: var(--cor_Concluido);
+    border-color: var(--cor_Concluido);
+}
+
+#sitacao .cursando {
+    color: var(--color_Dois);
+    border-color: var(--color_Dois);
+}
+
+#sitacao .fila {
+    color: var(--cor_Fila);
+    border-color: var(--cor_Fila);
+}
+
+#sitacao .inconpleto {
+    color: var(--cor_Incompleto);
+    border-color: var(--cor_Incompleto);
+}
+
+
+/* CAROUSEL */
+#cursos .carousel {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+}
+
+#cursos .carousel .curso {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media(min-width: 1500px) {
+    #cursos .carousel .curso {
+        padding: 20px 50px;
+    }
+}
+@media(min-width: 1700px) {
+    #cursos .carousel .curso {
+        padding: 20px 70px;
+    }
+}
+
+#cursos .carousel .curso img {
+    width: 100%;
+}
+
+#cursos .carousel .curso .curso-descricao {
+    padding: 15px;
+    box-sizing: border-box;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+}
+
+#cursos .carousel .curso .curso-descricao h2 {
+    text-align: center;
+    color: var(--color_Um);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#cursos .carousel .curso .curso-descricao p {
+    color: var(--color_Tres);
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 30px;
+    font-family: "Roboto-Light";
+}
+
+#cursos .carousel .curso .curso-descricao .button {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    height: 47px;
+}
+
+#cursos .carousel .curso .curso-descricao button {
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    padding: 10px 45px;
+    font-size: 16px;
+    color: var(--color_Tres);
+    cursor: pointer;
+    border: solid 3px;
+    transition: .5s;
+}
+#cursos .carousel .curso .curso-descricao button:hover {
+    background: var(--cor_Primaria);
+}
+
+/* CORES DA SITUACAO DOS CURSOS */
+/* CONCLUIDO */
+#cursos .carousel .curso .curso-concluido {
+    border-color: var(--cor_Concluido);
+}
+#cursos .carousel .curso .curso-concluido button {
+    background: var(--cor_Concluido);
+    border-color: var(--cor_Concluido);
+}
+/* CURSANDO */
+#cursos .carousel .curso .curso-cursando {
+    border-color: var(--color_Dois);
+}
+#cursos .carousel .curso .curso-cursando button {
+    background: var(--color_Dois);
+    border-color: var(--color_Dois);
+}
+/* FILA */
+#cursos .carousel .curso .curso-fila {
+    border-color: var(--cor_Fila);
+}
+#cursos .carousel .curso .curso-fila button {
+    background: var(--cor_Fila);
+    border-color: var(--cor_Fila);
+}
+/* INCOMPLETO */
+#cursos .carousel .curso .curso-incompleto {
+    border-color: var(--cor_Incompleto);
+}
+#cursos .carousel .curso .curso-incompleto button {
+    background: var(--cor_Incompleto);
+    border-color: var(--cor_Incompleto);
+}
+
+/* SLICK PREV E NEXT */
+.slick-prev, .slick-next {
+    position: absolute;
+    color: var(--color_Um);
+    border: transparent;
+    font-size: 35px;
+    z-index: 1;
+    background: transparent;
+    top: 230px;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: -30px;
+}
+
+.slick-next {
+    right: -30px;
+}
+
+.seta i {
+    color: #000;
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+/* --------------------- DETALHES DOS CURSOS --------------------- */
+.dark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    left: 0;
+    top: 0;
+    transition: .5s;
+}
+
+.box {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    background: var(--cor_Primaria);
+    overflow: auto;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    transition: .7s;
+}
+
+.box button {
+    border: none;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: solid 2px;
+    transition: .5s;
+}
+
+.box button i {
+    font-size: 14px;
+    color: var(--color_Tres);
+}
+
+.box .row-1 {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    transition: 1s;
+}
+
+.box .row-1 img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.box .row-1 a {
+    display: block;
+    text-decoration: none;
+    color: var(--color_Tres);
+    padding: 30px 0;
+    font-size: 18px;
+    transition: .5s;
+    border: solid 2px;
+}
+
+.box button:hover,
+.box .row-1 a:hover {
+    background: var(--cor_Primaria);
+}
+
+
+.box .row-2 {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 50px;
+    transition: .5s;
+}
+
+.box .row-2 h1 {
+    font-size: 20px;
+    color: var(--color_Um);
+    border-left: solid 5px;
+    padding: 5px 20px;
+    font-family: 'Roboto-Light';
+}
+
+.box .row-2 p {
+    color: var(--color_Tres);
+    font-size: 14px;
+    margin-top: 15px;
+    font-family: 'Roboto-Light';
+    line-height: 30px;
+}
+
+.box .row-2 p span {
+    font-family: 'Roboto-Bold';
+}
+
+.box .row-2 p i {
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.box .row-2 .status {
+    text-transform: capitalize;
+}
+
+.box .row-2 .detalhe {
+    margin-top: 50px;
+}
+
+.box .row-2 .detalhe h2 {
+    color: var(--color_Um);
+    font-size: 18px;
+    font-family: 'Roboto-Light';
+}
+
+.box .row-2 .status p {
+    font-family: 'Roboto-Bold';
+}
+
+
+
+/* CORES DO STATU DO DETALHE DO CURSO */
+/* CURSANDO */
+.detalhe-cursando button,
+.detalhe-cursando a {
+    background: var(--color_Dois);
+    border-color: var(--color_Dois) !important;
+}
+.detalhe-cursando .row-2 h1 {
+    border-color: var(--color_Dois) !important;
+}
+.detalhe-cursando .row-2 .status p,
+.detalhe-cursando .row-2 p span,
+.detalhe-cursando .row-2 p i {
+    color: var(--color_Dois) !important;
+}
+
+/* CONLUIDO */
+.detalhe-concluido button,
+.detalhe-concluido a {
+    background: var(--cor_Concluido);
+    border-color: var(--cor_Concluido) !important;
+}
+.detalhe-concluido .row-2 h1 {
+    border-color: var(--cor_Concluido) !important;
+}
+.detalhe-concluido .row-2 .status p,
+.detalhe-concluido .row-2 p span,
+.detalhe-concluido .row-2 p i {
+    color: var(--cor_Concluido) !important;
+}
+
+/* FILA */
+.detalhe-fila button,
+.detalhe-fila a {
+    background: var(--cor_Fila);
+    border-color: var(--cor_Fila) !important;
+}
+.detalhe-fila .row-2 h1 {
+    border-color: var(--cor_Fila) !important;
+}
+.detalhe-fila .row-2 .status p,
+.detalhe-fila .row-2 p span,
+.detalhe-fila .row-2 p i {
+    color: var(--cor_Fila) !important;
+}
+
+/* INCOMPLETO */
+.detalhe-incompleto button,
+.detalhe-incompleto a {
+    background: var(--cor_Incompleto);
+    border-color: var(--cor_Incompleto) !important;
+}
+.detalhe-incompleto .row-2 h1 {
+    border-color: var(--cor_Incompleto) !important;
+}
+.detalhe-incompleto .row-2 .status p,
+.detalhe-incompleto .row-2 p span,
+.detalhe-incompleto .row-2 p i {
+    color: var(--cor_Incompleto) !important;
+}
+
+
+
+/* SCROLLBAR DO BOX */
+.box::-webkit-scrollbar-track {
+    background: var(--cor_Primaria);
+}
+.box::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* CURSANDO */
+.detalhe-cursando::-webkit-scrollbar-thumb {
+    background: var(--color_Dois);
+    border: solid 2px var(--color_Dois);
+}
+/* CONCLUIDO */
+.detalhe-concluido::-webkit-scrollbar-thumb {
+    background: var(--cor_Concluido);
+    border: solid 2px var(--cor_Concluido);
+}
+/* FILA */
+.detalhe-fila::-webkit-scrollbar-thumb {
+    background: var(--cor_Fila);
+    border: solid 2px var(--cor_Fila);
+}
+/* INCOMPLETO */
+.detalhe-incompleto::-webkit-scrollbar-thumb {
+    background: var(--cor_Incompleto);
+    border: solid 2px var(--cor_Incompleto);
+}
+
+
+/* --------------------- PROJETOS --------------------- */
+#projetos {
+    width: 90%;
+    margin-left: 5%;
+    max-width: 1750px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    float: left;
+}
+
+#projetos .row {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#projetos .row .col {
+    width: 33%;
+    float: left;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+#projetos .row .col img {
+    max-width: 170px;
+}
+
+#projetos .row .col p {
+    font-size: 16px;
+    color: var(--color_Um);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#projetos .row .col a {
+    text-decoration: none;
+    color: var(--color_Tres);
+    font-size: 16px;
+    background: var(--color_Dois);
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border: solid 2px var(--color_Dois);
+    transition: .5s;
+    margin-top: 5px;
+}
+
+#projetos .row .col a:last-child {
+    background: #ad4804;
+    border: solid 2px #ad4804;
+}
+
+#projetos .row .col a:hover {
+    background: var(--cor_Primaria);
+}
+
+
+/* --------------------- TRAMPOS --------------------- */
+#trampos {
+    width: 90%;
+    margin-left: 5%;
+    max-width: 1750px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    float: left;
+}
+
+#trampos .row {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#trampos .row .col {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    height: 500px;
+} 
+
+#trampos .row .col img {
+    max-width: 230px;
+}
+
+#trampos .row .col h2 {
+    font-size: 16px;
+    color: var(--color_Dois);
+    font-family: "Roboto-Light";
+    margin-top: 50px;
+}
+
+#trampos .row .col h2 span {
+    color: var(--color_Tres);
+    background: var(--color_Dois);
+    padding: 5px 15px;
+}
+
+#trampos .row .col p {
+    margin-top: 50px;
+    width: 400px;
+    font-size: 16px;
+    color: var(--color_Um);
+}
+
+
+
+/* --------------------- FOOTER --------------------- */
+#footer {
+    width: 100%;
+    float: left;
+    background: var(--color_Dois);
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#footerBox {
+    position: relative;
+    width: 100%;
+    max-width: 1750px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#footerBox p {
+    color: var(--color_Tres);
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Roboto-Light";
+}
+
+#footerBox a {
+    color: #7cbfff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#footerBox a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#footerBox .col-1 {
+    width: 30%;
+    padding: 50px 0;
+    border-right: solid 5px var(--cor_Primaria);
+    box-sizing: border-box;
+    float: left;
+}
+
+#footerBox .col-1 .row {
+    margin-left: 0;
+    width: 90%;
+    margin-top: 40px;
+    border-bottom: solid 1px #003464;
+    padding-bottom: 15px;
+}
+
+#footerBox .col-1 .row .linguagem-utilizadas {
+    font-size: 22px;
+}
+
+#footerBox .col-1 .row .linguagem-utilizadas i {
+    margin: 0 5px;
+    margin-top: 10px;
+}
+
+#footerBox .col-1 .row:first-child {
+    margin-top: 0;
+}
+
+#footerBox .col-2 {
+    width: 70%;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#footerBox .col-2 i {
+    font-size: 200px;
+    margin-bottom: 200px;
+    color: #003464;
+}
+
+
