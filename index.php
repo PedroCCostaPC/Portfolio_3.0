@@ -312,7 +312,7 @@
                     </div>
 
                     <div class="row">
-                        <a target="blanck" href="https://github.com/PedroCCostaPC/portfolio" ><i class="fa-brands fa-github"></i> Link do projeto </a>
+                        <a target="blanck" href="https://github.com/PedroCCostaPC/Portfolio_3.0" ><i class="fa-brands fa-github"></i> Link do projeto </a>
                     </div>
 
                 </div>
