@@ -257,7 +257,7 @@ header {
 #skills .row .col {
     float: left;
     width: 40%;
-    height: 170px;
+    height: 200px;
     border: solid 2px var(--color_Um);
     margin: 0 4.5%;
     margin-bottom: 100px;
